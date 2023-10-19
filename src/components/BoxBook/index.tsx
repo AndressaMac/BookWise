@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Avatar, BoxInfor, ConteinerBox, HeaderBox } from "./styles";
+import { Avatar, BookImage, BookInfoContent, BoxInfor, ConteinerBox, ContentBook, HeaderBox } from "./styles";
 import Rating from '@mui/material/Rating';
 
 
@@ -20,14 +20,14 @@ return(
             <Rating name="read-only" value={value} readOnly />
             </div>
         </HeaderBox>
-        <div>
-            <div><img src="/images/o-hobbit.png"/></div>
-            <div>
+        <ContentBook>
+            <BookImage/>
+            <BookInfoContent>
                 <h1>O Hobbit</h1>
                 <p>J.R.R. Tolkien</p>
                 <span>Semper et sapien proin vitae nisi. Feugiat neque integer donec et aenean posuere amet ultrices. Cras fermentum id pulvinar varius leo a in. Amet libero pharetra nunc elementum fringilla velit ipsum. Sed vulputate massa velit nibh...</span>
-            </div>
-        </div>
+            </BookInfoContent>
+        </ContentBook>
     </ConteinerBox>
 )
 }

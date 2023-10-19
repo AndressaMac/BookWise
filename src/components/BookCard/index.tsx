@@ -8,7 +8,7 @@ export default function BookCard(){
    
     return(
         <ContainerBookCard>
-            <div><img/></div>
+            <div><img src="/images/books/o-hobbit.png"/></div>
             <div>
                 <div>
                     <span>Há 2 dias</span>
