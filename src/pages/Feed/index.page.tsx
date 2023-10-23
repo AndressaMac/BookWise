@@ -3,6 +3,8 @@ import BookCardPopular from "@/src/components/BookCardPopular"
 import Boxbook from "@/src/components/BoxBook"
 import MenuLogged from "@/src/components/MenuLogged"
 import { ConteinerFeed, PageTitleContent, TitlePage, TitleTranding } from "./styles"
+import { ReactElement } from "react"
+import { DefaultLayout } from "@/src/layouts/DefaultLayout"
 
 export default function Feed(){
     return(
@@ -12,7 +14,7 @@ export default function Feed(){
   </div>
   <div>
       <PageTitleContent>
-         <img src=" " alt=""/>
+         <img src="/" alt=""/>
          <h1>Início</h1>
       </PageTitleContent>
       <div>
@@ -37,4 +39,11 @@ export default function Feed(){
   </ConteinerFeed>
     )
 
+}
+Feed.getLayout = (page: ReactElement) => {
+  return (
+    <DefaultLayout title="Feed">
+      {page}
+    </DefaultLayout>
+  )
 }

@@ -37,7 +37,7 @@ export const TextContent = styled('div', {
 
 })
 
-export const LoginContant = styled('img', {
+export const LoginContant = styled('div', {
 
 display: 'flex',
 width: '23.25rem',
