@@ -1,5 +1,5 @@
 import BookCard from "@/src/components/BookCard"
-import BookCardPopular from "@/src/components/BookCardPopular"
+import BookCardPopular from "@/src/components/BookRating"
 import Boxbook from "@/src/components/BoxBook"
 import MenuLogged from "@/src/components/MenuLogged"
 import { ConteinerFeed, PageTitleContent, TitlePage, TitleTranding } from "./styles"

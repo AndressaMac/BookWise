@@ -11,7 +11,7 @@ export default function BookCardPopular(){
             <div>
                 <h1>A revolução dos bichos</h1>
                 <span>George Orwell</span>
-                 <Rating name="read-only" value={value} readOnly /> 
+                <Rating name="read-only" value={value} readOnly /> 
             </div>
         </ContainerBookCardPopular>
     )

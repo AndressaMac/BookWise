@@ -2,12 +2,12 @@
 import { styled } from "../../../stitches.config";
 
 export const ConteinerBox = styled('div', {
-width:'560px',
+width:'608px',
 height:'280px',
+padding: "18px $5",
 borderRadius: '8px',
 background: '$gray700',
 display:'flex',
-padding:'24px',
 flexDirection:'column',
 alignSelf: 'stretch',
 gap:'$2'
@@ -39,16 +39,18 @@ export const BoxInfor = styled('div',{
 export const BookImage = styled('div', {
 width: '108px',
 height:'152px' ,
-background:'content-box',
+borderRadius:'4px',
+background:'cover',
 backgroundImage:'URL(/images/books/o-hobbit.png)',
 })
 
 export const BookInfoContent= styled('div',{
-
+width:'453px'
 })
 export const ContentBook = styled('div',{
     display:'flex',
     flexDirection:'row',
     width:'560px',
     height:'152px',
+    gap:'$3'
 })
