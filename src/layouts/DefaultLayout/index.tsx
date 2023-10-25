@@ -2,6 +2,7 @@
 import Head from "next/head"
 import { ReactNode } from "react"
 import { Container, Content } from "./styles"
+import Sidebar from "@/src/components/Sidebar"
 
 type DefaultLayoutProps = {
   children: ReactNode
@@ -16,7 +17,7 @@ export const DefaultLayout = ({ title, children }: DefaultLayoutProps) => {
         <link rel="shortcut icon" href="/images/logo_mini.svg" type="image/svg" />
       </Head>
 
-      {/* <Sidebar /> */}
+       <Sidebar /> 
       <Content>
         {children}
       </Content>

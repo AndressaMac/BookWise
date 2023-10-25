@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.14",
     "@mui/styled-engine-sc": "^6.0.0-alpha.2",
+    "@phosphor-icons/react": "^2.0.13",
     "@prisma/client": "^5.4.2",
     "next": "latest",
     "next-auth": "^4.23.2",

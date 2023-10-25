@@ -28,7 +28,12 @@ export const Text = styled("p", {
       },
       "gray-400": {
         color: "$gray400",
+      },
+      "purple-100":{
+        color: "$purple100"
       }
+
+      
     }
   },
 
