@@ -1,4 +1,5 @@
 import { styled } from "@/stitches.config";
+import Link from "next/link";
 
 export const MenuConteiner = styled('div', {
     width: "232px",
@@ -20,10 +21,24 @@ export const MenuConteiner = styled('div', {
     } 
 })
 
-export const Menu = styled('div', {
-
+export const LoginButton = styled(Link, {
+   cursor:'pointer',
 })
 
-export const MenuItem = styled('div', {
+export const Logout= styled('div', {
+  cursor:'pointer',
+})
+
+export const Infofooter = styled('div', {
+  display:'flex',
+  flexDirection:'row',
+  gap:'$3',
  
+  p :{
+    maxWidth: 100,
+    whiteSpace: "nowrap",
+    overflow: "hidden",
+    textOverflow: "ellipsis"
+  },
 })
+
