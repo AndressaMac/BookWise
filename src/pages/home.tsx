@@ -1,4 +1,4 @@
-import { ContainerHome, LoginContant, LoginConteiner, TextContent } from "./styles";
+import { ContainerHome, LoginContant, LoginConteiner, TextContent } from "../styles/pages/home";
 import { signIn, useSession } from 'next-auth/react'
 
 

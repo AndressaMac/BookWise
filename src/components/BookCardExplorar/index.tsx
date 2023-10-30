@@ -1,11 +1,21 @@
 import { Rating } from "@mui/material";
 import { Heading, Text } from "../Typography";
 import { BookCardExplorarContainer, BookImage } from "./styles";
+import { Book, Category } from "@prisma/client"
+import { useQuery } from "@tanstack/react-query";
+import { api } from "@/src/lib/axios";
 
 
 export default function BookCardExplorar(){
+    // const { data: categories } = useQuery<Category[]>(["categories"], async () => {
+    //     const { data } = await api.get("/books/categories");
+    //     return data?.categories ?? []
+    //   })
+    
+    
+    
     return(
-        <BookCardExplorarContainer>
+        <BookCardExplorarContainer >
             <BookImage src="/images/books/codigo-limpo.png" width={108}
             height={152}
             alt="Picture of the author"/>

@@ -3,6 +3,8 @@ import { ContainerBookCard ,Contentimage,HeadContainer,InforContainer,DetailsCon
 import { useState } from "react";
 import { Heading, Text } from "../Typography";
 
+
+
 export default function BookCard(){
     const [value, setValue] = useState<number | null>(2);
    

@@ -1,4 +1,4 @@
-import { nunito } from '@/src/pages/_app.page';
+import { nunito } from '@/src/pages/_app';
 import { globalCss } from "../../stitches.config";
 
 export const globalStyles = globalCss({

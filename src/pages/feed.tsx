@@ -2,7 +2,7 @@ import BookCard from "@/src/components/BookCard"
 import BookCardPopular from "@/src/components/BookRating"
 import Boxbook from "@/src/components/BoxBook"
 
-import { ConteinerFeed, PageTitleContent, TitlePage, TitleTranding,PageTitleImage } from "./styles"
+import { ConteinerFeed, PageTitleContent, TitlePage, TitleTranding,PageTitleImage } from "../styles/pages/feed"
 import { ReactElement } from "react"
 import { DefaultLayout } from "@/src/layouts/DefaultLayout"
 import { Heading, Text } from "@/src/components/Typography"
@@ -50,3 +50,4 @@ Feed.getLayout = (page: ReactElement) => {
     </DefaultLayout>
   )
 }
+
