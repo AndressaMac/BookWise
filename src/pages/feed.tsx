@@ -3,12 +3,16 @@ import BookCardPopular from "@/src/components/BookRating"
 import Boxbook from "@/src/components/BoxBook"
 
 import { ConteinerFeed, PageTitleContent, TitlePage, TitleTranding,PageTitleImage } from "../styles/pages/feed"
-import { ReactElement } from "react"
+import { ReactElement, useEffect, useState } from "react"
 import { DefaultLayout } from "@/src/layouts/DefaultLayout"
 import { Heading, Text } from "@/src/components/Typography"
+import axios from "axios"
 
 
-export default function Feed(){
+export default function Feed({data}:any){
+  console.log("data", data.ratings);
+  
+
     return(
   <ConteinerFeed>  
 
@@ -28,7 +32,7 @@ export default function Feed(){
        <Text size='sm' color='gray-100'>Avaliações mais recentes</Text>
        
        <Boxbook/>
-       
+      
   </div>
   <div>
      <TitleTranding>
@@ -51,3 +55,18 @@ Feed.getLayout = (page: ReactElement) => {
   )
 }
 
+export async function getServerSideProps() {
+  // Realize uma solicitação à API aqui
+  try {
+    const response = await axios.get(`http://localhost:3000/api/ratings/latest`); // Substitua pela sua URL de API
+    const data = response.data;
+
+    return {
+      props: { data }, // Os dados serão passados para o componente como props
+    };
+  } catch (error) {
+    return {
+      props: { data: {} }, // Trate erros aqui
+    };
+  }
+}

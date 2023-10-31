@@ -2,10 +2,16 @@ import { useState } from "react";
 import { Avatar, BookImage, BookInfoContent, BoxInfor, ConteinerBox, ContentBook, HeaderBox } from "./styles";
 import Rating from '@mui/material/Rating';
 import { Heading, Text } from "../Typography";
+import axios from "axios";
+import { api } from "@/src/lib/axios";
 
 
 export default function Boxbook(){
     const [value, setValue] = useState<number | null>(2);
+
+
+
+
 return(
    
    <ConteinerBox>
