@@ -15,8 +15,6 @@ export default function Feed({ dataFromAPI1,dataFromAPI2 }: any) {
   console.log('data2', dataFromAPI2)
 
 
-
-
   return (
     <ConteinerFeed>
 

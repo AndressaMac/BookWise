@@ -1,7 +1,7 @@
 import { prisma } from "../../../../lib/prisma"
 import { NextApiRequest, NextApiResponse } from "next"
 import { getServerSession } from "next-auth"
-import { buildNextAuthOptions } from "../../auth/[...nextauth]"
+import { buildNextAuthOptions } from "../../../api/auth/[...nextauth].api"
 import { z } from "zod"
 
 export default async function handler(
