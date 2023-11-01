@@ -5,11 +5,19 @@ import { Heading, Text } from "../Typography";
 import axios from "axios";
 import { api } from "@/src/lib/axios";
 
+interface inforBookProps {
+    nameAvatar: string,
+    name:string,
+    author:string,
+    description:string,
+    avatar:string,
+    bookimage:string,
+}
 
-export default function Boxbook(){
+
+
+export default function Boxbook({nameAvatar,name, author,description,avatar,bookimage}:inforBookProps){
     const [value, setValue] = useState<number | null>(2);
-
-
 
 
 return(
@@ -17,10 +25,10 @@ return(
    <ConteinerBox>
         <HeaderBox>
             <div>
-                <Avatar src=''/>
+                <Avatar width={40} height={40} src={avatar}/>
             </div>
             <BoxInfor>
-                <Heading size='sm' color='gray-100' >Jaxson Dias</Heading >
+                <Heading size='sm' color='gray-100' >{nameAvatar}</Heading >
                 <Text size='sm' color='gray-400'>Hoje</Text>
             </BoxInfor>
             <div>
@@ -28,12 +36,13 @@ return(
             </div>
         </HeaderBox>
         <ContentBook>
-            <BookImage/>
+            <BookImage src={bookimage}
+             width={108}
+             height={152}/>
             <BookInfoContent>
-                <Heading size='sm' color='gray-100'>O Hobbit</Heading>
-                <Text size='sm' color='gray-400'>J.R.R. Tolkien</Text>
-                <Text size='sm' color='gray-300'>Semper et sapien proin vitae nisi. Feugiat neque integer donec et aenean posuere amet ultrices. Cras fermentum id pulvinar varius leo a in.
-                     Amet libero pharetra nunc elementum fringilla velit ipsum. Sed vulputate massa velit nibh...</Text>
+                <Heading size='sm' color='gray-100'>{name}</Heading>
+                <Text size='sm' color='gray-400'>{author}</Text>
+                <Text size='sm' color='gray-300'>{description}</Text>
             </BookInfoContent>
         </ContentBook>
     </ConteinerBox>

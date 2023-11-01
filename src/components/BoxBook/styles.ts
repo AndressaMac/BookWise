@@ -1,5 +1,6 @@
 
 import { styled } from "../../../stitches.config";
+import Image from "next/image";
 
 export const ConteinerBox = styled('div', {
 width:'608px',
@@ -13,7 +14,7 @@ alignSelf: 'stretch',
 gap:'$2'
 })
 
-export const Avatar = styled('div', {
+export const Avatar = styled(Image, {
 
 width:'40px',
 height:'40px',
@@ -36,12 +37,12 @@ export const BoxInfor = styled('div',{
     flexDirection:'column',
 })
 
-export const BookImage = styled('div', {
+export const BookImage = styled(Image, {
 width: '108px',
 height:'152px' ,
 borderRadius:'4px',
 background:'cover',
-backgroundImage:'URL(/images/books/o-hobbit.png)',
+
 })
 
 export const BookInfoContent= styled('div',{
