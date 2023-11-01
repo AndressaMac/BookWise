@@ -10,7 +10,7 @@ import axios from "axios"
 
 
 
-export default function Feed({ dataFromAPI1,dataFromAPI2 }: any) {
+export default function Feed({ dataFromAPI1,dataFromAPI2,data3 }: any) {
   console.log("data", dataFromAPI1);
   console.log('data2', dataFromAPI2)
 
@@ -84,10 +84,14 @@ export async function getServerSideProps() {
     const responsePopular = await axios.get(`http://localhost:3000/api/books/popular`);
     const dataPopular = responsePopular.data;
 
+
+
+
     return {
       props: {
         dataFromAPI1: data,
-        dataFromAPI2: dataPopular
+        dataFromAPI2: dataPopular,
+       
       },
 
       // Os dados serão passados para o componente como props
